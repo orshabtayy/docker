@@ -1,0 +1,9 @@
+# Run latest ubuntu and open bash terminal:
+docker pull ubuntu:latest
+docker run -it -v /tmp/my_dir:/external ubuntu:latest bash
+
+docker run python:3 python -c 'import sys; print(sys.version)'
+
+# Run Nginx:
+docker run --name docker-nginx -d -p 80:80 nginx:alpine
+Brows to http://localhost:80
